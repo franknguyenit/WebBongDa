@@ -105,7 +105,7 @@ namespace BongDa.Controllers
                     foreach (var row in db._0620_Workbase_GetStaff_byEmail(_email))
                     {
                         _url = "https://bongda.immgroup.com/verify/" + row.ROWID;
-                        string _body = "Vui lòng <a href='"+_url+"'>Click vào đây</a> để xác nhận đăng nhập.";
+                        string _body = "Vui lòng <a href='"+_url+"'>Click vào đây</a> để xác nhận đăng nhập. tesst";
                         fc.SendMessageMailKit("[FC]", "crm@immgroup.com", "xnmpyehltkznxedc", _email, "","paul@immgroup.com", " Xác nhận truy cập web bóng đá của IMM GROUP", _body);
 
                         return mes.Success("Vui lòng kiểm tra email để xác nhận đăng nhập");
